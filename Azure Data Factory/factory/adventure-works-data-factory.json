@@ -1,0 +1,9 @@
+{
+	"name": "adventure-works-data-factory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a2884a21-a8ac-4977-8719-9dd83d114c2e",
+		"tenantId": "fdc798aa-6f15-4e72-bf4a-6c813690fc75"
+	}
+}
