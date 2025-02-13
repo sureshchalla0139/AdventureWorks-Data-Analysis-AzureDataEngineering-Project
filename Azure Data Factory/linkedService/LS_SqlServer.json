@@ -1,0 +1,27 @@
+{
+	"name": "LS_SqlServer",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SURESHCHALLA\\SQLEXPRESS",
+			"database": "AdventureWorks2019",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "adv_sureshch",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "db-password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AzureSHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
