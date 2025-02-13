@@ -1,0 +1,6 @@
+{
+	"name": "AzureSHIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
