@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapse-analytic-workspace"
+		},
+		"AdventureWorks_LS_accountKey": {
+			"value": ""
+		},
+		"synapse-analytic-workspace-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-analytic-workspace.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AdventureWorks_LS_properties_typeProperties_url": {
+			"value": "https://adventureworkadlsgen2.dfs.core.windows.net/"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "synapse-analytic-workspace-ondemand.sql.azuresynapse.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "AdventureWorks"
+		},
+		"synapse-analytic-workspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adlsgen2youtube.dfs.core.windows.net"
+		}
+	}
+}
