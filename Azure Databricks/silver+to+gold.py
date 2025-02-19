@@ -6,7 +6,7 @@
 
 table_name = []
 
-for i in dbutils.fs.ls('mnt/silver/SalesLT/'):
+for i in dbutils.fs.ls('mnt/silver/Sales/'):
   print(i.name)
   table_name.append(i.name.split('/')[0])
 
@@ -17,7 +17,7 @@ table_name
 # COMMAND ----------
 
 for name in table_name:
-  path = '/mnt/silver/SalesLT/' + name
+  path = '/mnt/silver/Sales/' + name
   print(path)
   df = spark.read.format('delta').load(path)
 
@@ -31,7 +31,7 @@ for name in table_name:
       # Change the column name using withColumnRenamed and regexp_replace
       df = df.withColumnRenamed(old_col_name, new_col_name)
 
-  output_path = '/mnt/gold/SalesLT/' +name +'/'
+  output_path = '/mnt/gold/Sales/' +name +'/'
   df.write.format('delta').mode("overwrite").save(output_path)
 
 # COMMAND ----------
