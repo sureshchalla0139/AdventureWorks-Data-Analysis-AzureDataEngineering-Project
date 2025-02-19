@@ -1,0 +1,33 @@
+{
+	"name": "DS_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AdventureWorks_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Sales",
+				"fileSystem": "gold"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Country_Region_Code",
+				"type": "UTF8"
+			},
+			{
+				"name": "Currency_Code",
+				"type": "UTF8"
+			},
+			{
+				"name": "Modified_Date",
+				"type": "UTF8"
+			}
+		]
+	}
+}
