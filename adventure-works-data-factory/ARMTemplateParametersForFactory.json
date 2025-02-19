@@ -8,8 +8,14 @@
 		"LS_PARQUET_accountKey": {
 			"value": ""
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0213-015359-2u8qlj2j"
+		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://key-valut-adv-works.vault.azure.net/"
+		},
+		"LS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adventureworkadlsgen2.dfs.core.windows.net/"
 		},
 		"LS_SqlServer_properties_typeProperties_server": {
 			"value": "SURESHCHALLA\\SQLEXPRESS"
@@ -19,9 +25,6 @@
 		},
 		"LS_SqlServer_properties_typeProperties_userName": {
 			"value": "adv_sureshch"
-		},
-		"LS_PARQUET_properties_typeProperties_url": {
-			"value": "https://adventureworkadlsgen2.dfs.core.windows.net/"
 		}
 	}
 }
