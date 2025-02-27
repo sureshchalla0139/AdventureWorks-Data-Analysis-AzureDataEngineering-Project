@@ -1,6 +1,6 @@
-# AdventureWorks Azure Data Engineering Project
+# Adventure Works | Azure Data Engineering Project
 
-## 📌 Introduction
+## Introduction
 This project demonstrates the **end-to-end data pipeline** for processing and analyzing **AdventureWorks Sales data** using the **Azure Cloud** ecosystem. It follows the **Medallion Architecture (Bronze, Silver, Gold)** to ensure **data quality, governance, and performance**.
 
 The project involves:
@@ -16,7 +16,7 @@ The project involves:
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 This project follows the **Medallion Architecture**:
 1. **Bronze Layer**: Stores raw, unprocessed data as extracted from the source.
 2. **Silver Layer**: Cleans and transforms data for business analysis.
@@ -24,16 +24,12 @@ This project follows the **Medallion Architecture**:
 
 The architecture ensures **scalability, data governance, and optimized query performance**.
 
----
-
-## 🖼️ High-Level Architecture Diagram
+### 🖼️ High-Level Architecture Diagram
 Below is the **high-level architecture** of the project:
 
-![Project Architecture](AdventureWorksArchitecture.png)
+![Project Architecture](Project%files/AdventureWorksArchitecture.png)
 
----
-
-## 🔑 Key Components
+### 🔑 Key Components
 - **Data Ingestion**: Azure Data Factory extracts data from **On-Prem SQL Server**.
 - **Storage**: Azure Data Lake Gen2 with **Bronze, Silver, and Gold layers**.
 - **Processing & Transformation**: Azure Databricks (PySpark-based ETL).
