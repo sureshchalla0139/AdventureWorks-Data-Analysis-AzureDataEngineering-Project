@@ -24,12 +24,13 @@ This project follows the **Medallion Architecture**:
 
 The architecture ensures **scalability, data governance, and optimized query performance**.
 
-### 🖼️ High-Level Architecture Diagram
+### High-Level Architecture Diagram
 Below is the **high-level architecture** of the project:
 
-![Project Architecture](Project%files/AdventureWorksArchitecture.png)
 
-### 🔑 Key Components
+![Project Architecture](Project%20files/AdventureWorksArchitecture.png)
+
+### Key Components
 - **Data Ingestion**: Azure Data Factory extracts data from **On-Prem SQL Server**.
 - **Storage**: Azure Data Lake Gen2 with **Bronze, Silver, and Gold layers**.
 - **Processing & Transformation**: Azure Databricks (PySpark-based ETL).
@@ -40,9 +41,9 @@ Below is the **high-level architecture** of the project:
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 1. **Extract & Load (EL)**  
-   - Azure Data Factory fetches **Sales schema** from **SQL Server**.  
+   - Azure Data Factory fetches data from **SQL Server**.  
    - Stores raw data in **Azure Data Lake (Bronze Layer)**.
 
 2. **Transformation (ETL in Databricks)**  
@@ -61,6 +62,12 @@ Below is the **high-level architecture** of the project:
 
 5. **Data Visualization in Power BI**  
    - Power BI connects to **Azure Synapse for interactive dashboards**.
+     
+     **Data Model**
+     ![Data Model](Project%20files/AdventureWorksDataMod.PNG)
+     
+     **Dashboard**
+     ![Dashboard](Project%20files/AdventureWorksDash.PNG)
 
 6. **Security & Governance**  
    - **Azure Active Directory (Entra ID)** for **Role-Based Access Control (RBAC)**.  
@@ -69,7 +76,7 @@ Below is the **high-level architecture** of the project:
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 | Component             | Technology Used                     |
 |----------------------|----------------------------------|
 | **Data Ingestion**   | Azure Data Factory (ADF)         |
@@ -83,32 +90,26 @@ Below is the **high-level architecture** of the project:
 
 ---
 
-## ✨ Key Features
-✅ **End-to-End Cloud-Based Data Pipeline** using Azure.  
-✅ **Multi-Hop Data Architecture** (Bronze, Silver, Gold).  
-✅ **PySpark-Based Transformations** in Azure Databricks.  
-✅ **Optimized Data Querying** with Azure Synapse Analytics.  
-✅ **Interactive Dashboards** in Power BI.  
-✅ **Enterprise-Grade Security** with Entra ID & Azure Key Vault.  
-✅ **Scalable & Automated ETL Workflows** using Azure Data Factory.  
+## Key Features
+- **End-to-End Cloud-Based Data Pipeline** using Azure.  
+- **Multi-Hop Data Architecture** (Bronze, Silver, Gold).  
+- **PySpark-Based Transformations** in Azure Databricks.  
+- **Optimized Data Querying** with Azure Synapse Analytics.  
+- **Interactive Dashboards** in Power BI.  
+- **Enterprise-Grade Security** with Entra ID & Azure Key Vault.  
+- **Scalable & Automated ETL Workflows** using Azure Data Factory.  
 
 ---
 
-## 📂 Dataset Used
-- **Source**: **AdventureWorks2019 (Sales Schema)**
-- **Schema Includes**:
-  - `Customer`
-  - `SalesOrderHeader`
-  - `SalesOrderDetail`
-  - `CurrencyRate`
-  - `SpecialOffer`
-  - **And more...**
-- **File Format**: Parquet  
-- **Storage**: Azure Data Lake Gen2  
+## Dataset Used
+- **Source**: **AdventureWorks2019**
+- **Here is the dataset used in the Project**:
+  https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2019.bak
+- **Storage**: On-Prem SQL Server  
 
 ---
 
-## 🛠️ Project Setup
+## Project Setup
 ### **Prerequisites**
 1. Azure Subscription.
 2. SQL Server with **AdventureWorks2019 database**.
@@ -125,41 +126,27 @@ Below is the **high-level architecture** of the project:
 
 ---
 
-## 📊 Project Insights
+## Project Insights
 - **Total Sales Per Year**
 - **Top Selling Products**
 - **Customer Purchase Trends**
 - **Sales Performance by Region**
 - **Revenue Growth Over Time**
-- **Discount Impact on Sales**
 - **High-Value Customers Identification**
 
 ---
 
-## 🚀 Key Takeaways
-✅ **Azure Data Engineering Best Practices**: Implemented **Medallion Architecture** for scalable data processing.  
-✅ **Optimized ETL Workflows**: Using **PySpark in Azure Databricks** for high-performance transformations.  
-✅ **Serverless Analytics**: Leveraged **Azure Synapse SQL Pool** for querying structured data.  
-✅ **Data-Driven Insights**: Created **Power BI Dashboards** for business intelligence.  
-✅ **Enterprise Security**: Implemented **RBAC, Key Vault, and GitHub for governance**.  
+## Key Takeaways
+- **Azure Data Engineering Best Practices**: Implemented **Medallion Architecture** for scalable data processing.  
+- **Optimized ETL Workflows**: Using **PySpark in Azure Databricks** for high-performance transformations.  
+- **Serverless Analytics**: Leveraged **Azure Synapse SQL Pool** for querying structured data.  
+- **Data-Driven Insights**: Created **Power BI Dashboards** for business intelligence.  
+- **Enterprise Security**: Implemented **RBAC, Key Vault, and GitHub for governance**.  
 
 ---
 
-## 📜 Conclusion
+## Conclusion
 This project **showcases the power of Azure** in **building a scalable, secure, and high-performance data pipeline**. It **demonstrates best practices for data engineering** using the **Medallion Architecture**, enabling **efficient data transformation and analytics**.
 
----
 
-## 🛠️ Future Enhancements
-🔹 Implement **Delta Lake** for better versioning & ACID compliance.  
-🔹 Use **Azure Machine Learning** to predict future sales trends.  
-🔹 Automate end-to-end pipeline with **Azure Data Factory triggers**.  
-🔹 Optimize Power BI dashboards with **incremental data refresh**.  
 
----
-
-## 📌 Author
-**[Your Name]**  
-📧 Contact: [Your Email]  
-🔗 LinkedIn: [Your LinkedIn Profile]  
-🚀 GitHub: [Your GitHub Profile]  
